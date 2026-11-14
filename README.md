@@ -1,2 +1,2 @@
 # sam-the-cat
-Vibecoded virtual companion named Sam. VIP
+Vibecoded virtual companion named Sam. WIP
