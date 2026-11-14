@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; media-src 'self'; style-src 'unsafe-inline'">
+<title>Мир кота Сэма</title>
+<style>
+  :root { --bg: #f6f3ee; --card: #ffffff; --text: #2b2e33; --muted: #7b838d; --accent: #e08a2c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1f2125; --card: #2b2e33; --text: #eef1f4; --muted: #a1a8b1; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: "Segoe UI", system-ui, sans-serif; line-height: 1.45; }
+  header { text-align: center; padding: 40px 16px 16px; }
+  header h1 { margin: 0; font-size: 2rem; }
+  header p { margin: 6px 0 0; color: var(--muted); }
+  main { display: grid; gap: 18px; padding: 16px; max-width: 1100px; margin: 0 auto;
+         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .card { background: var(--card); border-radius: 16px; overflow: hidden;
+          box-shadow: 0 2px 10px rgba(0,0,0,.08); display: flex; flex-direction: column; }
+  .card img { width: 100%; display: block; aspect-ratio: 4 / 3; object-fit: cover; }
+  .note { font-size: 4rem; text-align: center; padding: 18px 0 4px; color: var(--accent); }
+  audio { width: calc(100% - 24px); margin: 0 12px 6px; }
+  .text { padding: 12px 16px 16px; }
+  .kind { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+  h2 { margin: 2px 0 6px; font-size: 1.15rem; }
+  .text p { margin: 0 0 8px; }
+  time { font-size: .8rem; color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); grid-column: 1 / -1; padding: 40px; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 24px 16px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Мир кота Сэма</h1>
+  <p>Картины и мелодии, которые сам придумал серый британец Сэм. Работ: 5.</p>
+</header>
+<main>
+<article class="card"><img src="works/picture_20261114_180938.png" alt="Солнечное пятно на подушке" loading="lazy"><div class="text"><span class="kind">картина</span><h2>Солнечное пятно на подушке</h2><p>Тёплое солнечное пятно лежит на моей любимой подушке, и я сплю в его золотом свете, пока за окном бегут облака.</p><time>2026-11-14 18:09</time></div></article>
+<article class="card"><img src="works/picture_20261114_174338.png" alt="Сон о высоком шкафу" loading="lazy"><div class="text"><span class="kind">картина</span><h2>Сон о высоком шкафу</h2><p>Серый кот Сэм во сне сидит на самом верху шкафа под звёздами и любуется ночным городом.</p><time>2026-11-14 17:43</time></div></article>
+<article class="card"><img src="works/picture_20261114_174309.png" alt="Коробка и солнце" loading="lazy"><div class="text"><span class="kind">картина</span><h2>Коробка и солнце</h2><p>Сэм лежит в картонной коробке, а сквозь окно на него падает тёплый жёлтый свет.</p><time>2026-11-14 17:43</time></div></article>
+<article class="card"><div class="note" aria-hidden="true">♪</div><audio controls preload="none" src="works/music_20261114_174234.wav"></audio><div class="text"><span class="kind">мелодия</span><h2>Окно и птица</h2><p>Сэм смотрит в окно на птицу за стеклом и напевает тихий мотив, который возвращается снова и снова, как мысль о тепле и свете.</p><time>2026-11-14 17:42</time></div></article>
+<article class="card"><div class="note" aria-hidden="true">♪</div><audio controls preload="none" src="works/music_20261114_174214.wav"></audio><div class="text"><span class="kind">мелодия</span><h2>Пруд и клубок</h2><p>Сэм напевает тихую мелодию о том, как лежит в коробке и вспоминает свои любимые места на рабочем столе.</p><time>2026-11-14 17:42</time></div></article>
+</main>
+<footer>Сэм — виртуальный кот, который живёт на рабочем столе. Его работы созданы с помощью ИИ.</footer>
+</body>
+</html>
